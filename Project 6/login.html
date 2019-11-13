@@ -10,14 +10,43 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="login.css"/>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<header>
+  <ul class=backgroundslideshow>
+    <li><img src= "image1.jpg" width=2000px height=1000px></li>
+    <li><img src= "image2.jpg" width=2000px height=1000px></li>
+    <li><img src= "image3.jpg" width=2000px height=1000px></li>
+    <li><img src= "image4.jpg" width=2000px height=1000px></li>
+    <li><img src= "image5.jpg" width=2000px height=1000px></li>
+  </ul>
+</header>
+
 <body>
-  <div id= name>
-    <i class="material-icons">home</i>
-    <h1>Far From Home</h1>
+  <div id= top>
+    <div id=homeicon><i class="material-icons">home</i></div>
+    <div id= title><h1>Far From Home</h1></div>
   </div>
-  <div class=signin>
-  </div>
-  <div class=signup>
+  <div class= bodie>
+    <div id= bodiebodie></div>
+    <div class=signin>
+      <h2>Existing User?</h2>
+      <input id="username" type="text" placeholder="Username"/>
+      <input id="password" type="text" placeholder="Password"/>
+      <button id="login">Login</button>
+    </div>
+    <div class=signup>
+      <h2>New User?</h2>
+      <input id="firstname" type="text" placeholder="First Name"/>
+      <input id="lastname" type="text" placeholder="Last Name"/>
+      <input id="email" type="text" placeholder="Email"/>
+      <input id="hometown" type="text" placeholder="Hometown"/>
+      <h3>I am a...</h3>
+      <select>
+        <option value="student">University Student</option>
+        <option value="family">Family</option>
+        <option value="friend">Friend</option>
+      </select>
+      <button id="create">Create Account</button>
+    </div>
   </div>
 
 </body>
