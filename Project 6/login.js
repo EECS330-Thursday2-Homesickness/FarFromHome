@@ -1,8 +1,8 @@
 function createAccount(){
 	if (document.getElementById("firstname").value == "Sally"){
-		window.location.pathname= '/homepage.html';
+		window.location.href= 'homepage.html';
 	}
 	else {
-		window.location.pathname= '/homepage2.html';
+		window.location.href= 'homepage2.html';
 	}
 }
