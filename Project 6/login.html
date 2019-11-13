@@ -21,12 +21,10 @@
 </header>
 
 <body>
-  <div id= top>
-    <div id=homeicon><i class="material-icons">home</i></div>
-    <div id= title><h1>Far From Home</h1></div>
-  </div>
+  <div id=homeicon><i class="material-icons">home</i></div>
+  <div id= title><h1>Far From Home</h1></div>
+
   <div class= bodie>
-    <div id= bodiebodie></div>
     <div class=signin>
       <h2>Existing User?</h2>
       <input id="username" type="text" placeholder="Username"/>
@@ -45,9 +43,10 @@
         <option value="family">Family</option>
         <option value="friend">Friend</option>
       </select>
-      <button id="create">Create Account</button>
+      <button onclick="createAccount()">Create Account</button>
     </div>
   </div>
 
+<script src="login.js"></script>
 </body>
 </html>
