@@ -99,6 +99,14 @@ body {
 
   /* CSS to keep things consistent with the homepage ends here */
 
+	.feedtype {
+		text-align: left;
+		font-weight: bold;
+		font-size: 25px;
+		margin-top: 30px;
+		margin-left: 60px;
+	}
+
     .postboxone {
         margin: 230px auto;
         padding: 20px;
@@ -109,6 +117,8 @@ body {
         border: 2px solid rgb(167, 173, 182); 
         border-radius: 5px;
         padding-top: 30px;
+		position: relative;
+		top: 20px;
     }
 
     .postheader {
@@ -136,6 +146,14 @@ body {
         display: flex;
         justify-content: space-evenly;  
     }
+	
+	.Response2 {
+		text-align: center;
+        position: relative;
+        top: 10px;
+        display: flex;
+        justify-content: space-evenly;  
+	}
 
     .text {
       text-align: left;
@@ -181,18 +199,80 @@ body {
   border-radius: 5px;
   padding-top: 30px;
   position: relative;
-  bottom: 400px;
+  bottom: 340px;
+}
+
+.postboxfour {
+  margin: 230px auto;
+  padding: 20px;
+  color: black;
+  width: 30%;
+  height: 200px;
+  background: white;   
+  border: 2px solid rgb(167, 173, 182); 
+  border-radius: 5px;
+  padding-top: 30px;
+  position: relative;
+  bottom: 560px;
 }
 
 .wrapper {
   margin: -200px auto;
   position: relative;
   right: 450px;
+  top: -20px;
 }
 
 .wrappertwo {
   margin: -200px auto;
   position: relative;
-  left: 150px;
-  bottom: 366px;
+  left: 60px;
+  bottom: 428px;
+}
+
+
+
+.wrapper3{
+	color: black;
+	width: 400px;
+	display: inline;
+	position: fixed;
+	bottom: 100px;
+	right: 30px;
+	top:-11px;
+	
+}
+
+.create-post
+{
+  margin: 230px auto;
+  padding: 20px;
+  color: black;
+  height: 464px;
+  background: white;   
+  border: 2px solid rgb(167, 173, 182); 
+  border-radius: 5px;
+  padding-top: 30px;
+  position: relative;
+}
+
+#title
+{
+	border: 2px solid rgb(167, 173, 182); 
+	border-radius: 5px;
+	padding-left: 8px;
+}
+.textbox
+{
+	color: gray;
+	background: white;
+}
+
+#paragraph
+{
+  border: 2px solid rgb(167, 173, 182); 
+  border-radius: 5px;
+  margin-top: 20px;
+  height: 230px;
+  padding-left: 8px;
 }
