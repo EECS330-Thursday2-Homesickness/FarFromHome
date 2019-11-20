@@ -1,7 +1,3 @@
-localStorage.setItem("bar", "communityCount");
-var communityCount = localStorage.getItem("bar");
-
-
 var communityCount = 0;
 var communityList = [];
 
