@@ -1,0 +1,275 @@
+body {
+  background-image: url("../home.jpg");
+  background-size: cover;
+  font-family: Avenir, sans-serif;
+  overflow: hidden;
+}
+
+/* CSS to keep things consistent with the homepage starts here */
+.top {
+  margin-top: 20px;
+}
+
+.home-and-title
+{
+  display: inline-block;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+
+
+.icon{
+  size: 100px;
+}
+
+.options {
+  font-size: 20px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .popup {
+    margin: 230px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    height: 20%;
+    position: relative;
+  }
+
+  .popup h2 {
+    margin-top: 0;
+    text-align: center;
+    color: #333;
+  }
+
+  .Yesno {
+      text-align: center;
+      top: 30px;
+      display: flex;
+      justify-content: space-evenly;
+  }
+
+  .button {
+      padding: 10px;
+      border: 2px solid rgb(60, 134, 218);
+      cursor: pointer;
+      color: black;
+      text-decoration: none;
+      border-radius: 4px;
+      display: inline-block;
+      font-size: 16px;
+      opacity: 75%;
+  }
+
+  .signout {
+    text-decoration: none;
+    font-style: italic;
+    color: black;
+    font-weight: bold;
+    margin-right: 20px;
+  }
+
+  .material-icons {
+    color: black;
+  }
+
+  /* CSS to keep things consistent with the homepage ends here */
+
+  .feedtype {
+    text-align: left;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-left: 60px;
+  }
+
+    .postboxone {
+        margin: 230px auto;
+        padding: 20px;
+        color: black;
+        width: 30%;
+        height: 200px;
+        background: white;
+        border: 2px solid rgb(167, 173, 182);
+        border-radius: 5px;
+        padding-top: 30px;
+    position: relative;
+    top: 20px;
+    }
+
+    .postheader {
+        text-align: left;
+        color: black;
+        font-weight: bold;
+        position: relative;
+        left: 30px;
+        bottom: 50px;
+    }
+
+    .date {
+      text-align: right;
+      color: black;
+      font-style: italic;
+      position: relative;
+      right: 10px;
+      bottom: 90px;
+    }
+
+    .Response {
+        text-align: center;
+        position: relative;
+        bottom: 50px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+  .Response2 {
+    text-align: center;
+        position: relative;
+        top: 10px;
+        display: flex;
+        justify-content: space-evenly;
+  }
+
+    .text {
+      text-align: left;
+      position: relative;
+      bottom: 70px;
+    }
+
+    .buttontwo {
+      padding: 10px;
+      border: 2px solid white;
+      cursor: pointer;
+      color: white;
+      background: rgb(60, 134, 218);
+      text-decoration: none;
+      border-radius: 4px;
+      display: inline-block;
+      font-size: 16px;
+      opacity: 75%;
+  }
+
+  .postboxtwo {
+    margin: 230px auto;
+    padding: 20px;
+    color: black;
+    width: 30%;
+    height: 200px;
+    background: white;
+    border: 2px solid rgb(167, 173, 182);
+    border-radius: 5px;
+    padding-top: 30px;
+    position: relative;
+    bottom: 200px;
+}
+
+.postboxthree {
+  margin: 230px auto;
+  padding: 20px;
+  color: black;
+  width: 30%;
+  height: 200px;
+  background: white;
+  border: 2px solid rgb(167, 173, 182);
+  border-radius: 5px;
+  padding-top: 30px;
+  position: relative;
+  bottom: 340px;
+}
+
+.postboxfour {
+  margin: 230px auto;
+  padding: 20px;
+  color: black;
+  width: 30%;
+  height: 200px;
+  background: white;
+  border: 2px solid rgb(167, 173, 182);
+  border-radius: 5px;
+  padding-top: 30px;
+  position: relative;
+  bottom: 560px;
+}
+
+.wrapper {
+  margin: -200px auto;
+  position: relative;
+  right: 450px;
+  top: -40px;
+}
+
+.wrappertwo {
+  margin: -200px auto;
+  position: relative;
+  left: 60px;
+  bottom: 448px;
+}
+
+
+
+.wrapper3{
+  color: black;
+    position: relative;
+    width: 400px;
+    left: 1100px;
+    bottom: 1805px;
+}
+
+.create-post
+{
+  margin: 230px auto;
+  padding: 20px;
+  color: black;
+  height: 464px;
+  background: white;
+  border: 2px solid rgb(167, 173, 182);
+  border-radius: 5px;
+  padding-top: 30px;
+  position: relative;
+}
+
+#title
+{
+  border: 2px solid rgb(167, 173, 182);
+  border-radius: 5px;
+  padding-left: 8px;
+}
+.textbox
+{
+  color: gray;
+  background: white;
+}
+
+#paragraph
+{
+  border: 2px solid rgb(167, 173, 182);
+  border-radius: 5px;
+  margin-top: 20px;
+  height: 230px;
+  padding-left: 8px;
+}
