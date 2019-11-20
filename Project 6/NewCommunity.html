@@ -22,7 +22,7 @@
     <div class="options">
       <button class = "button" onclick="location.href= ">Feed</button>
       <button class = "button" onclick="location.href= ">Journal</button>
-      <button class = "button" onclick="location.href= ">Communities</button>
+      <button class = "button" onclick="goToCommunity()">Communities</button>
     </div>
   </div>
 
@@ -36,11 +36,11 @@
       <h4>Choose Which Community:</h4>
       <select>
         <option value="">Choose One</option>
-        <option value="family">Family Community</option>
-        <option value="friend">Friend Community</option>
+        <option value="family" id="optioncommunity">Family Community</option>
+        <option value="friend" id="optioncommunity">Friend Community</option>
       </select>
       <br> </br>
-      <a class="button" href="homepage.html">Add Community</a>
+      <button onclick="addToArray()">Add Community</button>
     </div>
   </div>
 
@@ -57,4 +57,5 @@
       </div>
   </div>
 
+<script src="findcommunitypage.js"></script>
 </body>
