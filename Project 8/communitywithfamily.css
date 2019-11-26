@@ -1,0 +1,147 @@
+body {
+  background-image: url("../home.jpg");
+  background-size: cover;
+  font-family: Avenir, sans-serif;
+}
+
+.top {
+  margin-top: 20px;
+}
+
+.home-and-title
+{
+  display: inline-block;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+
+
+.icon
+{
+  size: 100px;
+}
+
+.options {
+  font-size: 20px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.middle {
+
+  color: rgb(13, 162, 231);
+  text-align: center;
+  font-size: 20px;
+  margin-top: 10%;
+}
+
+.bottom {
+  color: black;
+    text-align: center;
+    font-size: 20px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .popup {
+    margin: 230px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    height: 20%;
+    position: relative;
+  }
+
+  .popup h2 {
+    margin-top: 0;
+    text-align: center;
+    color: #333;
+  }
+
+  .Yesno {
+      text-align: center;
+      position: relative;
+      top: 30px;
+      display: flex;
+      justify-content: space-evenly;
+  }
+
+  .button {
+      padding: 10px;
+      border: 2px solid rgb(60, 134, 218);
+      cursor: pointer;
+      color: black;
+      text-decoration: none;
+      border-radius: 4px;
+      opacity: 75%;
+  }
+
+  .button:hover {
+    opacity: 100%
+  }
+
+  .signout {
+    text-decoration: none;
+    color: black;
+    font-style: normal;
+    font-weight: bold;
+    margin-right: 20px;
+  }
+
+  .material-icons {
+    color: black;
+  }
+
+.mycommunities
+{
+  margin-left: 2%;
+}
+
+.communities {
+  margin-left: 15%;
+  display: flex;
+}
+
+.family{
+   float: left;
+   height: 400px;
+   width: auto;
+   margin-top: -5%;
+}
+  .add{
+    display: block;
+    height: 200px;
+    width: auto;
+    margin-top: 5%;
+    border:0;
+    margin-left: 15%;
+  }
+
+  .text-family
+  {
+    margin-left: 28%;
+    margin-top: -8%;
+    font-weight: bold;
+    font-family: cursive;
+  }
