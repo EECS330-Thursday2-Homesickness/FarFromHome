@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+<title>Communities</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/extras.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="communities.css"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<body>
+
+  <div class="home-and-title">
+    <a href="homepage.html"><i class="material-icons">home</i></a>
+    <h2 class="home-and-title">Far From Home</h2>
+    <a class="signout" href="#popup1">Sign Out</a>
+  </div>
+
+  <div class="options">
+
+    <button class = "button" onclick="window.location.href= 'Family Feed.html'; ">Feed</button>
+    <button class = "button" onclick="location.href= ">Journal</button>
+    <button class = "button" onclick="goToCommunity()">Communities</button>
+
+  </div>
+
+  <div class="communities">
+    <p> You don't have any communities yet! Add a community to begin interacting with others. </p>
+  </div>
+
+  <div>
+      <img src="plus button.png" alt="add community" class="add" usemap="#addmap";>
+  </div>
+
+  <map name="addmap">
+  <area shape="circle" coords="70,70,70" href="NewCommunity.html" alt="add community">
+</map>
+<script src="findcommunitypage.js"></script>
+</body>

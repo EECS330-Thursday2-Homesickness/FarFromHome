@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+<title>Login</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/extras.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="login.css"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<header>
+  <ul class=backgroundslideshow>
+    <li><img src= "image1.jpg" width=2000px height=1000px></li>
+    <li><img src= "image2.jpg" width=2000px height=1000px></li>
+    <li><img src= "image3.jpg" width=2000px height=1000px></li>
+    <li><img src= "image4.jpg" width=2000px height=1000px></li>
+    <li><img src= "image5.jpg" width=2000px height=1000px></li>
+  </ul>
+</header>
+
+<body>
+  <div id=homeicon><i class="material-icons">home</i></div>
+  <div id= title><h1>Far From Home</h1></div>
+
+  <div class= bodie>
+    <div class=signin>
+      <h2>Existing User?</h2>
+      <input id="username" type="text" placeholder="Username"/>
+      <input id="password" type="text" placeholder="Password"/>
+      <button id="login">Login</button>
+    </div>
+    <div class=signup>
+      <h2>New User?</h2>
+      <input id="firstname" type="text" placeholder="First Name"/>
+      <input id="lastname" type="text" placeholder="Last Name"/>
+      <input id="email" type="text" placeholder="Email"/>
+      <input id="hometown" type="text" placeholder="Hometown"/>
+      <h3>I am a...</h3>
+      <select>
+        <option value="">Choose One</option>
+        <option value="student">University Student</option>
+        <option value="family">Family Member</option>
+        <option value="friend">Friend</option>
+      </select>
+      <button onclick="createAccount()">Create Account</button>
+    </div>
+  </div>
+
+<script src="findcommunitypage.js"></script>
+</body>
+</html>
