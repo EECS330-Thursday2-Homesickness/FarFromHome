@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+<title>Journal</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/extras.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="journal.css"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<body>
+
+  <div class="home-and-title">
+    <a href="homepage.html"><i class="material-icons">home</i></a>
+    <h2 class="home-and-title">Far From Home</h2>
+    <a class="signout" href="#popup1">Sign Out</a>
+  </div>
+
+  <div class="options">
+
+    <button class = "button" onclick="window.location.href= 'Family Feed.html'; ">Feed</button>
+    <button class = "button" onclick="location.href= 'journal.html'; ">Journal</button>
+    <button class = "button" onclick="goToCommunity()">Communities</button>
+
+  </div>
+
+  <h1><div class="myjournal">My Journal</div> </h1>
+
+  <div class="listbox">
+
+    <ul>
+
+        <li class="listitems"> <button onclick="window.location.href = 'journal.html'; " class="listbutton"> <p class = "date">11/26/19</p> <p class="entry"> I'm really... </p> </button> </li>
+        <li class="listitems"> <button onclick="window.location.href = 'journal2.html'; " class="listbutton"> <p class = "date">11/25/19</p> <p class="entry"> Today I... </p> </button> </li>
+        <li class="listitems"> <button onclick="window.location.href = 'journal3.html'; " class="listbutton"> <p class = "date">11/24/19</p> <p class="entry"> I felt really... </p> </button> </li>
+        <li class="listitems"> <button onclick="window.location.href = 'journal4.html'; " class="listbuttonselected"> <p class = "date">11/23/19</p> <p class="entry"> My favorite... </p> </button> </li>
+
+    </ul>
+
+  </div>
+
+  <div class = "journalentry">
+    <p> My favorite part about college is that I'm always with my friends. Even though I miss my family, it's nice that
+    I can just go to my friends' rooms when I'm bored. Today I went over to Holly's room to work on stats homework. We weren't
+      really productive but it was so much fun to spend time with her! We were able to talk about how we felt, and I shared with
+      her how it's been pretty hard for me to adjust here. It felt good to talk to another person who could relate!
+     </p>
+    </div>
+
+    <div class = "newentry">
+      <button class = "newentrybutton" onclick="location.href= "> <p class = "newentrytext"> New Entry </p></button>
+    </div>
+
+
+</body>
