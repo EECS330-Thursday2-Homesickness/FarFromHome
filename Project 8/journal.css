@@ -190,4 +190,15 @@ padding:20px;
   text-align: center;
 }
 
+.newdate{
+  text-align: left;
+  font-weight: bold;
+  font-size: 20px;
+  float: left;
+  margin-top: 5%;
+}
+
+.newtitle{
+  font-weight: bold;
+  margin-top: 7%;
 }
