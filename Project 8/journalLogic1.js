@@ -2,12 +2,20 @@
 
 const init = function(e) {
 	let btn = document.querySelector("#savebutton");
-	let newstring = document.getElementById("textentry").value;
 	
 	btn.addEventListener('click', function() {
-		localStorage.setItem('mystrings', newstring);
+		window.localStorage.clear();
+		localStorage.setItem('mystrings', document.getElementById("textentry").value);
+		
+		
+		localStorage.setItem('mydate', document.getElementById("textentryfordate").value);
+		
+		localStorage.setItem('mytitle', document.getElementById("textentryfortitle").value);
+		
 		window.document.location = './journalNewEntry.html';
 	})
+	
+	
 };
 document.addEventListener('DOMContentLoaded', function() {
 init();});
