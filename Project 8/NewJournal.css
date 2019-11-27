@@ -139,7 +139,7 @@ body {
     }
   
 
-    .date {
+    #date_today {
         position: relative;
         bottom: 240px;
         left: 337px;
