@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="journal.css"/>
+<link rel="stylesheet" type="text/css" href="homepage.css"/>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <body>
 
@@ -20,7 +21,7 @@
 
   <div class="options">
 
-    <button class = "button" onclick="window.location.href= 'Family Feed.html'; ">Feed</button>
+    <button class = "button" onclick="goToFeed();">Feed</button>
     <button class = "button" onclick="location.href= 'journal.html'; ">Journal</button>
     <button class = "button" onclick="goToCommunity()">Communities</button>
 
@@ -52,6 +53,17 @@
     <div class = "newentry">
       <button class = "newentrybutton" onclick="window.location.href= 'NewJournal.html'"> <p class = "newentrytext"> New Entry </p></button>
     </div>
-
+	<div id="popup1" class="overlay">
+      <div class="popup">
+        <h2>Are you sure you want to sign out?</h2>
+        <div class="content">
+          <div class ="Yesno">
+            <a class="button" href="journal.html">Cancel</a>
+            <a class="button" href="login.html">Yes</a>
+          </div>
+        </div>
+      </div>
+    </div>
+	<script src="findcommunitypage.js"></script>
 
 </body>
