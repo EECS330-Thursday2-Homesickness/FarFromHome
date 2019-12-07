@@ -10,11 +10,20 @@ function clickadd() {
 function createAccount() {
 	window.localStorage.clear();
 	localStorage.setItem('communityCount', 0);
+	var dropdown = document.getElementById("who");
 	if (document.getElementById("firstname").value == "Sally"){
-		window.location.href= 'homepage.html';
+		if (dropdown.options[dropdown.selectedIndex].value != "")
+			window.location.href= 'homepage.html';
+		else {
+			//user cannot move on without selecting one
+		}
 	}
 	else {
-		window.location.href= 'homepage2.html';
+		if (dropdown.options[dropdown.selectedIndex].value != "")
+			window.location.href= 'homepage2.html';
+		else {
+			//user cannot move on without selecting one
+		}
 	}
 }
 
