@@ -112,18 +112,32 @@ body {
     color: black;
   }
 
-  .communities {
-    font-size: 20px;
-    text-align: center;
-    margin-top: 10%;
-  }
+.mycommunities
 
+{
+  margin-left: 2%;
+}
+.communities {
+  margin-left: 20%;
+}
+
+.friends{
+  float: left;
+   height: 200px;
+   width: auto;
+}
   .add{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100px;
-    height: auto;
+    height: 200px;
+    width: auto;
     margin-top: 5%;
     border:0;
+    margin-left: 40%;
+  }
+
+  .text-friends
+  {
+    margin-left: 25%;
+    font-weight: bold;
+    font-family: cursive;
   }

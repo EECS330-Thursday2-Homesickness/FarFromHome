@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+<title>New Journal Entry</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/extras.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="NewJournal.css"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<body>
+
+  <div class="home-and-title">
+    <a href="homepage.html"><i class="material-icons">home</i></a>
+    <h2 class="home-and-title">Far From Home</h2>
+    <a class="signout" href="#popup1">Sign Out</a>
+  </div>
+
+  <div class="options">
+
+    <button class = "button" onclick="window.location.href= 'Family Feed.html'; ">Feed</button>
+    <button class = "button" onclick="location.href= 'journal.html'; ">Journal</button>
+    <button class = "button" onclick="goToCommunity()">Communities</button>
+
+  </div>
+
+
+  <h1><div class="title">New Journal Entry</div> </h1>
+
+
+  <div class="entry">
+      <div class = "mood">
+          <div class ="question">How homesick are you feeling? </div>
+            <div>
+            <input type="radio" id="1" name="mood" value="1"
+                    checked>
+            <label for="1">Not at all</label>
+            </div>
+
+            <div>
+            <input type="radio" id="2" name="mood" value="2">
+            <label for="2">Barely</label>
+            </div>
+
+            <div>
+            <input type="radio" id="3" name="mood" value="3">
+            <label for="3">Somewhat</label>
+            </div>
+
+            <div>
+            <input type="radio" id="4" name="mood" value="4">
+            <label for="4">Quite</label>
+            </div>
+                    
+            <div>
+            <input type="radio" id="5" name="mood" value="5">
+            <label for="5">Very</label>
+            </div>
+      </div>
+      <div class="date">Date: <textarea id="textentryfordate" name="dateentry" placeholder="mm/dd/year" style = height:15px;></textarea></div>
+	  <div class="date">Title: <textarea id="textentryfortitle" name="titleentry" placeholder="Enter Title Here" style = "width:400px; height: 15px;"></textarea></div>
+  <textarea id="textentry" name="textentry" placeholder="Write something..."></textarea>
+    <p>  </p>
+    </div>
+</div>
+
+    <div class = "saveentry">
+      <button id = "savebutton" class = "saveentrybutton" > Save</button>
+    </div>
+	<script src="journalLogic1.js"></script>
+
+</body>

@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="css/extras.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="communitywithfamily.css"/>
+<link rel="stylesheet" type="text/css" href="commfriendsandfamily.css"/>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <body>
 
@@ -20,25 +20,27 @@
 
   <div class="options">
 
-    <button class = "button" onclick="window.location.href= 'Family Feed.html'; ">Feed</button>
+    <button class = "button" onclick="goToFeed()">Feed</button>
     <button class = "button" onclick="location.href= 'journal.html'; ">Journal</button>
     <button class = "button" onclick="goToCommunity()">Communities</button>
 
   </div>
 
-    <h1><div class="mycommunities">My Communities</div></h1>
+  <h1><div class="mycommunities">My Communities</div></h1>
 
   <div class="communities">
-      <img src="family4.png" alt="family community" class="family";>
-      <img src="plus button.png" alt="add community" class="add" usemap="#addmap";>
+    <img src="family4.png" alt="family community" class="family" onclick = "goToFamilyFeed()";>
+    <img src="friendsss.png" alt="friends community" class="friends" onclick = "goToFriendFeed()";>
+    <img src="plus button.png" alt="add community" class="add" usemap="#addmap";>
   </div>
 
   <map name="addmap">
-  <area shape="circle" coords="100,100,100" href="NewCommunity.html" alt="add community">
-</map>
+    <area shape="circle" coords="100,100,100" href="NewCommunity.html" alt="add community">
+  </map>
 
-  <div class="text-family">
-    <p>FAMILY</p>
+  <div class="text">
+    <p><div class="family-text">FAMILY</div></p>
+    <p><div class="friends-text">FRIENDS</div></p>
   </div>
 
   <script src="findcommunitypage.js"></script>

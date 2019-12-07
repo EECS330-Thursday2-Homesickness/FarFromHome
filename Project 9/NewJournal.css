@@ -1,0 +1,173 @@
+body {
+    background-image: url("../home.jpg");
+    background-size: cover;
+    font-family: Avenir, sans-serif;
+    overflow: hidden;
+  }
+  
+  /* CSS to keep things consistent with the homepage starts here */
+  .top {
+    margin-top: 20px;
+  }
+  
+  .home-and-title
+  {
+    display: inline-block;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+  }
+  
+  
+  .icon{
+    size: 100px;
+  }
+  
+  .options {
+    font-size: 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .overlay {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.7);
+      transition: opacity 500ms;
+      visibility: hidden;
+      opacity: 0;
+    }
+  
+  .overlay:target {
+      visibility: visible;
+      opacity: 1;
+    }
+  
+    .popup {
+      margin: 230px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 5px;
+      width: 30%;
+      height: 20%;
+      position: relative;
+    }
+  
+    .popup h2 {
+      margin-top: 0;
+      text-align: center;
+      color: #333;
+    }
+  
+    .Yesno {
+        text-align: center;
+        top: 30px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+  
+    .button {
+        padding: 10px;
+        border: 2px solid rgb(60, 134, 218);
+        cursor: pointer;
+        color: black;
+        text-decoration: none;
+        border-radius: 4px;
+        display: inline-block;
+        font-size: 16px;
+        opacity: 75%;
+    }
+  
+    .button:hover {
+      opacity: 100%
+    }
+  
+    .signout {
+      text-decoration: none;
+      font-style: italic;
+      color: black;
+      font-weight: bold;
+      margin-right: 20px;
+    }
+  
+    .material-icons {
+      color: black;
+    }
+  
+    /* CSS to keep things consistent with the homepage ends here */
+  
+    .title {
+
+        margin-top: 5%;
+        margin-left: 5%;
+        
+    }
+
+    .entry {
+        background-color: rgba(255,255,255,0.8);
+        border: 2px solid rgba(0, 0, 0, 0.7);
+        height: 350px;
+        width: 80%;
+        padding-top: 2%;
+        padding-left: 2%;
+        padding-right: 2%;
+        margin-left: 5%;
+    }
+
+    .question {
+        margin-bottom: 1%;
+    }
+
+    .mood {
+        background-color: white;
+        border: 1px solid rgba(0, 0, 0, 0.4);
+        height: 150px;
+        width: 250px;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-top: 60px;
+        padding-bottom: 50px;
+        position: relative;
+        top: 30px;
+    }
+  
+
+    .date {
+        position: relative;
+        bottom: 240px;
+        left: 337px;
+    }
+
+    #textentry {
+        height: 200px;
+        width: 850px;
+        padding: 15px;
+        margin-top: 1%;
+        position: relative;
+        left: 335px;
+        bottom: 230px;
+    }
+
+    .saveentrybutton {
+        width: 200px;
+        height: 50px;
+        background-color: #E6E6FA;
+        margin-top: 2%;
+        margin-left: 46%;
+        position: relative;
+        left: 460px;
+        bottom: 20px;
+    }
+
+    .saveentrybutton:hover{
+        background:#9370DB;
+    }
+	
+

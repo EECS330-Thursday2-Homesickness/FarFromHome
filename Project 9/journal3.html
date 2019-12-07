@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+<title>Journal</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/extras.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="journal.css"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<body>
+
+  <div class="home-and-title">
+    <a href="homepage.html"><i class="material-icons">home</i></a>
+    <h2 class="home-and-title">Far From Home</h2>
+    <a class="signout" href="#popup1">Sign Out</a>
+  </div>
+
+  <div class="options">
+
+    <button class = "button" onclick="window.location.href= 'Family Feed.html'; ">Feed</button>
+    <button class = "button" onclick="location.href= 'journal.html'; ">Journal</button>
+    <button class = "button" onclick="goToCommunity()">Communities</button>
+
+  </div>
+
+  <h1><div class="myjournal">My Journal</div> </h1>
+
+  <div class="listbox">
+
+    <ul>
+
+        <li class="listitems"> <button onclick="window.location.href = 'journal.html'; " class="listbutton"> <p class = "date">11/26/19</p> <p class="entry"> I'm really... </p> </button> </li>
+        <li class="listitems"> <button onclick="window.location.href = 'journal2.html'; " class="listbutton"> <p class = "date">11/25/19</p> <p class="entry"> Today I... </p> </button> </li>
+        <li class="listitems"> <button onclick="window.location.href = 'journal3.html'; " class="listbuttonselected"> <p class = "date">11/24/19</p> <p class="entry"> I felt really... </p> </button> </li>
+        <li class="listitems"> <button onclick="window.location.href = 'journal4.html'; " class="listbutton"> <p class = "date">11/23/19</p> <p class="entry"> My favorite... </p> </button> </li>
+
+    </ul>
+
+  </div>
+
+  <div class = "journalentry">
+    <p> I felt really upset this morning because my roommate went home for the weekend, so it's been pretty lonely in my room.
+    I wish I could go home, but I guess it's good that I can't because it would make me more sad. On a more positive note,
+  I did well on my math midterm today! College exams are really different from high school, and it's been hard adjusting.
+This was the first time I've felt good about an exam I've taken here! </p>
+    </div>
+
+    <div class = "newentry">
+      <button class = "newentrybutton" onclick="window.location.href= 'NewJournal.html'"> <p class = "newentrytext"> New Entry </p></button>
+    </div>
+
+
+</body>

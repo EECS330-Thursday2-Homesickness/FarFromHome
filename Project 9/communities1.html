@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="css/extras.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="communitywithfamily.css"/>
+<link rel="stylesheet" type="text/css" href="communities.css"/>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <body>
 
@@ -20,26 +20,22 @@
 
   <div class="options">
 
-    <button class = "button" onclick="window.location.href= 'Family Feed.html'; ">Feed</button>
+    <button class = "button" onclick="goToFeed()">Feed</button>
     <button class = "button" onclick="location.href= 'journal.html'; ">Journal</button>
     <button class = "button" onclick="goToCommunity()">Communities</button>
 
   </div>
 
-    <h1><div class="mycommunities">My Communities</div></h1>
-
   <div class="communities">
-      <img src="family4.png" alt="family community" class="family";>
-      <img src="plus button.png" alt="add community" class="add" usemap="#addmap";>
+    <p> You don't have any communities yet! Add a community to begin interacting with others. </p>
+  </div>
+
+  <div>
+      <img src="plus button.png" alt="add community" id="add" onclick="clickadd()";>
   </div>
 
   <map name="addmap">
-  <area shape="circle" coords="100,100,100" href="NewCommunity.html" alt="add community">
+  <area shape="circle" coords="70,70,70" href="NewCommunity.html" alt="add community">
 </map>
-
-  <div class="text-family">
-    <p>FAMILY</p>
-  </div>
-
-  <script src="findcommunitypage.js"></script>
+<script src="findcommunitypage.js"></script>
 </body>

@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+
+<html>
+<title>Friend Feed</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/extras.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="Friend Feed.css"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<body>
+
+  <div class="top">
+    <div class="home-and-title">
+      <a href="homepage.html"><i class="material-icons">home</i></a>
+        <h2 class="home-and-title">Far From Home</h2>
+        <a class="signout" href="#popup1">Sign Out</a>
+    </div>
+    <div class="options">
+      <button class = "button" onclick="location.href= ">Feed</button>
+      <button class = "button" onclick="location.href= 'journal.html'; ">Journal</button>
+      <button class = "button" onclick="goToCommunity()">Communities</button>
+    </div>
+  </div>
+
+
+<div class="feedtype"> Northwestern Friends Feed</div>
+
+  <div class="wrapper">
+  <div class ="postboxone">
+    <i class="material-icons">perm_identity</i>
+    <div class ="postheader">
+      <h2>Megha Ramanathan</h2>
+    </div>
+    <div class="date">3 hrs</div>
+    <div class="text">
+    <p> Women in Computing is an organization for women passionate about technology! Come to our bonding event this Thursday 11/21 to meet new people in CS!</p>
+    </div>
+    <div class ="Response">
+        <a class="buttontwo" >Like</a>
+        <a class="buttontwo">Comment</a>
+    </div>
+  </div>
+
+  <div class ="postboxtwo">
+      <i class="material-icons">perm_identity</i>
+      <div class ="postheader">
+        <h2>Divya Sharma</h2>
+      </div>
+      <div class="date">15 hrs</div>
+      <div class="text">
+      <p> I just read a study that over 80% freshmen can feel homesick! </p>
+      </div>
+      <div class ="Response">
+          <a class="buttontwo">Like</a>
+          <a class="buttontwo">Comment</a>
+      </div>
+    </div>
+    </div>
+
+    <div class="wrappertwo">
+    <div class ="postboxthree">
+        <i class="material-icons">perm_identity</i>
+        <div class ="postheader">
+          <h2>Megan Yaur</h2>
+        </div>
+        <div class="date">2 days</div>
+        <div class="text">
+        <p> I thought Wildcat Welcome was too overwhelming but I feel a lot less homesick now that I'm so busy with classes!</p>
+        </div>
+        <div class ="Response">
+            <a class="buttontwo">Like</a>
+            <a class="buttontwo">Comment</a>
+        </div>
+      </div>
+    <div class ="postboxfour">
+        <i class="material-icons">perm_identity</i>
+        <div class ="postheader">
+          <h2>Stephanie Yaur</h2>
+        </div>
+        <div class="date">3 days</div>
+        <div class="text">
+        <p> My friend at Baylor didn't feel homesick at all! She joined at least 5 clubs right away though so I think that's very helpful.</p>
+        </div>
+        <div class ="Response">
+            <a class="buttontwo">Like</a>
+            <a class="buttontwo">Comment</a>
+        </div>
+      </div>
+      </div>
+   -->
+
+  <div class="wrapper3">
+    <div class="create-post">
+      <div class="post-header">
+        <h2>Create New Post</h2>
+      </div>
+      <div class="textbox">
+        <div id="title">
+          <h4>Title</h4>
+        </div>
+        <div id="paragraph">
+          <p>Type post here</p>
+        </div>
+      </div>
+      <div class="Response2">
+        <a class="buttontwo">Cancel</a>
+        <a class="buttontwo">Post</a>
+      </div>
+    </div>
+  </div>
+
+      <div id="popup1" class="overlay">
+          <div class="popup">
+            <h2>Are you sure you want to sign out?</h2>
+            <div class="content">
+              <div class ="Yesno">
+                <a class="button" href="Family Feed.html">Cancel</a>
+                <a class="button" href="login.html">Yes</a>
+              </div>
+            </div>
+          </div>
+      </div>
+      <script src="findcommunitypage.js"></script>
+</body>

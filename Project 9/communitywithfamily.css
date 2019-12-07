@@ -94,6 +94,7 @@ body {
       color: black;
       text-decoration: none;
       border-radius: 4px;
+      opacity: 75%;
   }
 
   .button:hover {
@@ -112,18 +113,35 @@ body {
     color: black;
   }
 
-  .communities {
-    font-size: 20px;
-    text-align: center;
-    margin-top: 10%;
-  }
+.mycommunities
+{
+  margin-left: 2%;
+}
 
+.communities {
+  margin-left: 15%;
+  display: flex;
+}
+
+.family{
+   float: left;
+   height: 400px;
+   width: auto;
+   margin-top: -5%;
+}
   .add{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100px;
-    height: auto;
+    height: 200px;
+    width: auto;
     margin-top: 5%;
     border:0;
+    margin-left: 15%;
+  }
+
+  .text-family
+  {
+    margin-left: 28%;
+    margin-top: -8%;
+    font-weight: bold;
+    font-family: cursive;
   }

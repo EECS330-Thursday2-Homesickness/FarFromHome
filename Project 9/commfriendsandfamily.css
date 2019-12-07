@@ -99,7 +99,7 @@ body {
   .button:hover {
     opacity: 100%
   }
-
+  
   .signout {
     text-decoration: none;
     color: black;
@@ -112,18 +112,52 @@ body {
     color: black;
   }
 
-  .communities {
-    font-size: 20px;
-    text-align: center;
-    margin-top: 10%;
-  }
+.mycommunities
 
+{
+  margin-left: 2%;
+}
+.communities {
+  margin-left: 4%;
+  /*float: left;*/
+  display: flex;
+}
+
+.family{
+  float: left;
+   height: 400px;
+   width: auto;
+   margin-top: -5%;
+}
+
+
+.friends{
+   height: 200px;
+   width: auto;
+   margin-left:15%;
+   margin-top: 3%;
+}
   .add{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100px;
-    height: auto;
-    margin-top: 5%;
+    height: 200px;
+    width: auto;
     border:0;
+    margin-left: 15%;
+    margin-top: 3%;
+  }
+
+  .text
+  {
+    font-weight: bold;
+    font-family: cursive;
+    display: flex;
+    margin-top:-6%;
+  }
+.family-text
+{
+  margin-left: 17%;
+}
+  .friends-text
+  {
+    margin-left: 31%;
   }

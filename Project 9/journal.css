@@ -2,8 +2,10 @@ body {
   background-image: url("../home.jpg");
   background-size: cover;
   font-family: Avenir, sans-serif;
+  overflow: hidden;
 }
 
+/* CSS to keep things consistent with the homepage starts here */
 .top {
   margin-top: 20px;
 }
@@ -18,8 +20,7 @@ body {
 }
 
 
-.icon
-{
+.icon{
   size: 100px;
 }
 
@@ -30,20 +31,6 @@ body {
   color: black;
   display: flex;
   justify-content: space-evenly;
-}
-
-.middle {
-
-  color: rgb(13, 162, 231);
-  text-align: center;
-  font-size: 20px;
-  margin-top: 10%;
-}
-
-.bottom {
-  color: black;
-    text-align: center;
-    font-size: 20px;
 }
 
 .overlay {
@@ -81,7 +68,6 @@ body {
 
   .Yesno {
       text-align: center;
-      position: relative;
       top: 30px;
       display: flex;
       justify-content: space-evenly;
@@ -94,6 +80,9 @@ body {
       color: black;
       text-decoration: none;
       border-radius: 4px;
+      display: inline-block;
+      font-size: 16px;
+      opacity: 75%;
   }
 
   .button:hover {
@@ -102,8 +91,8 @@ body {
 
   .signout {
     text-decoration: none;
+    font-style: italic;
     color: black;
-    font-style: normal;
     font-weight: bold;
     margin-right: 20px;
   }
@@ -112,18 +101,104 @@ body {
     color: black;
   }
 
-  .communities {
-    font-size: 20px;
-    text-align: center;
-    margin-top: 10%;
-  }
+  /* CSS to keep things consistent with the homepage ends here */
 
-  .add{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100px;
-    height: auto;
-    margin-top: 5%;
-    border:0;
-  }
+.myjournal {
+
+margin-top: 5%;
+margin-left: 5%;
+
+}
+
+.listbox {
+
+margin-top: 5%;
+float: left;
+
+}
+
+.listitems {
+
+  list-style: none;
+  margin-left: 15%;
+
+}
+
+.listbutton {
+
+width: 200px;
+height: 50px;
+background-color: #E6E6FA;
+
+}
+
+.date {
+  text-align: left;
+  font-weight: bold;
+  font-size: 20px;
+  float: left;
+  margin-top: 5%;
+
+}
+
+.entry {
+font-weight: bold;
+margin-top: 7%;
+}
+
+.listbutton:hover{
+    background:#9370DB;
+}
+
+.listbuttonselected
+{
+  width: 200px;
+  height: 50px;
+  background-color: #9370DB;
+}
+
+.journalentry {
+background-color:#E6E6FA;
+width: 50%;
+height: 160px;
+margin-right: 25%;
+margin-top: 6%;
+float: right;
+border-style: solid;
+color:black;
+padding:20px;
+}
+
+.newentrybutton
+{
+  width: 200px;
+  height: 50px;
+  background-color: #E6E6FA;
+  margin-top: 5%;
+  margin-left: 46%;
+}
+
+.newentrybutton:hover{
+    background:#9370DB;
+}
+
+.newentrytext
+{
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 5%;
+  text-align: center;
+}
+
+.newdate{
+  text-align: left;
+  font-weight: bold;
+  font-size: 20px;
+  float: left;
+  margin-top: 5%;
+}
+
+.newtitle{
+  font-weight: bold;
+  margin-top: 7%;
+}
