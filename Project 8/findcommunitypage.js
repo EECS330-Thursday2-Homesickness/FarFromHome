@@ -1,8 +1,14 @@
-var communityCount = 0;
-var communityList = [];
+function clickadd() {
+	let addbutton = document.querySelector("#add");
+		window.localStorage.clear();
+		localStorage.setItem('communityCount', 0);
+		localStorage.setItem('firstcommunity', "");
+		window.document.location = './NewCommunity.html';
+	
+}
 
-function createAccount(){
-	communityCount = 0;
+function createAccount() {
+	
 	if (document.getElementById("firstname").value == "Sally"){
 		window.location.href= 'homepage.html';
 	}
@@ -11,40 +17,39 @@ function createAccount(){
 	}
 }
 
-function addToArray()
-{
-  if (communityCount >= 2)
-  {
-  goToCommunity();
-}
-  if (document.getElementById("optioncommunity").value == "family")
-  {
-    communityList[communityCount] = "family";
-  }
-  else {
-    communityList[communityCount] = "friends";
-  }
-
-  communityCount++;
-
-	if (communityList[0] == communityList[1])
-	{
-		communityCount = 1;
+function createCommunityPage() {
+	var dropdown = document.getElementById("optioncommunity");
+	if (localStorage.getItem('communityCount') == 0) {
+		if (dropdown.options[dropdown.selectedIndex].value == "family") {
+			localStorage.setItem('communityCount', 1);
+			localStorage.setItem('firstcommunity', 'family');
+			window.document.location = './communitywithfamily.html';
+		}
+		else if (dropdown.options[dropdown.selectedIndex].value == "friend") {
+			localStorage.setItem('communityCount', 1);
+			localStorage.setItem('firstcommunity', 'friends');
+			window.document.location = './communitywithfriends.html';
+		}
+		else {
+			//do not let user move on without selecting
+		}
 	}
-
-  goToCommunity();
-
-
+	else if (localStorage.getItem('communityCount') >= 1) {
+		localStorage.setItem('communityCount', 2);
+		window.document.location = './commfriendsandfamily.html';
+	}
 }
+
+
 
 function goToCommunity(){
-  if (communityCount == 0)
+  if (localStorage.getItem('communityCount') == 0)
   {
     window.location.href='communities1.html';
   }
-	else if (communityCount == 1)
+	else if (localStorage.getItem('communityCount') == 1)
   {
-    if (communityList[0] == "friends")
+    if (localStorage.getItem('firstcommunity') == "friends")
     {
       window.location.href='communitywithfriends.html';
     }
@@ -58,4 +63,31 @@ function goToCommunity(){
   }
 }
 
-delete window.communityCount;
+function goToFeed() {
+	if (localStorage.getItem('communityCount') == 0)
+  {
+    //no feed yet because no communities
+  }
+	else if (localStorage.getItem('communityCount') == 1)
+  {
+    if (localStorage.getItem('firstcommunity') == "friends")
+    {
+      window.location.href='Friend Feed.html';
+    }
+    else {
+      window.location.href='Family Feed.html';
+    }
+  }
+  else
+  {
+    window.location.href='Family Feed.html';
+  }
+}
+
+function goToFamilyFeed() {
+	window.location.href='Family Feed.html';
+}
+
+function goToFriendFeed() {
+	window.location.href='Friend Feed.html';
+}
