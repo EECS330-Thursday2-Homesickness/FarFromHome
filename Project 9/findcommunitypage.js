@@ -8,7 +8,8 @@ function clickadd() {
 }
 
 function createAccount() {
-	
+	window.localStorage.clear();
+	localStorage.setItem('communityCount', 0);
 	if (document.getElementById("firstname").value == "Sally"){
 		window.location.href= 'homepage.html';
 	}

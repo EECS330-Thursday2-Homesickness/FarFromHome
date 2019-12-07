@@ -2,7 +2,7 @@ var communityCount = 0;
 var communityList = [];
 
 function createAccount(){
-	communityCount = 0;
+	localStorage.setItem('communityCount',0);
 	if (document.getElementById("firstname").value == "Sally"){
 		window.location.href= 'homepage.html';
 	}
